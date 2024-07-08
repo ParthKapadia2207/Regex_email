@@ -16,15 +16,17 @@ Regular expressions (regex) are like a secret language for pattern matching with
 - [Character Escapes](#character-escapes)
 
 ## Regex Components
-/^[\w.-]+@[a-zA-Z]+.[a-zA-Z]{2,}$/
+^[\w.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\.[a-zA-Z]{2,})?$
 ### Anchors
-Anchors specify positions in the text where matches must occur, such as ^ for the start of the line and $ for the end of the line. This essentially closes in the code inside the regex line.
+Anchors specify positions in the text where matches must occur, such as ^ for the start of the line and $ for the end of the line. This essentially closes in the code inside the regex line.Also '@ ' matches the literal  symbol.
 
 ### Quantifiers
-Quantifiers specify how many instances of a character or group must be present for a match, like + for one or more occurrences and * for zero or more. Here we only use plus becaus ethere are several components we need included within an email address.
+Quantifiers specify how many instances of a character or group must be present for a match, like + for one or more occurrences . Here we use Non-capturing group with ? quantifier, making it optional.
+
 ### Grouping Constructs
-Grouping constructs ( ) are used to create subexpressions within a larger regex, allowing you to apply quantifiers or capture matches. We do not need these because we have a couple bracket expressions.
-### Bracket Expressions
+Grouping constructs ( ) are used to create subexpressions within a larger regex, allowing you to apply quantifiers or capture matches.
+
+### Bracket Expression
 Bracket expressions [ ] define sets of characters to match against, such as [a-z] for any lowercase letter or [0-9] for any digit. We use these to define the parameters of the characters within each email address.
 
 ### Character Classes
