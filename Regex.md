@@ -42,4 +42,4 @@ Character escapes \ allow special characters to be used literally or give specia
 
 ## Author
 
-The Information was gathered by Parth Kapadia ,FrontEnd Developer Github Repo: 
+The Information was gathered by Parth Kapadia ,FrontEnd Developer Github Repo: https://github.com/ParthKapadia2207/Regex_email
