@@ -1,4 +1,4 @@
-# Title (replace with your title)
+# Title 
 Regex code for Email configuration
 
 ## Summary
